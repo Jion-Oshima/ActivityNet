@@ -25,8 +25,8 @@ import sys
 import time
 import numpy as np
 
-from ava import object_detection_evaluation
-from ava import standard_fields
+from models.activitynet.Evaluation.ava import object_detection_evaluation
+from models.activitynet.Evaluation.ava import standard_fields
 
 
 def print_time(message, start):
