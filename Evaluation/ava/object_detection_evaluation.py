@@ -33,10 +33,10 @@ import collections
 import logging
 import numpy as np
 
-import models.activitynet.Evaluation.ava.standard_fields
-import models.activitynet.Evaluation.ava.label_map_util
-import models.activitynet.Evaluation.ava.metrics
-import models.activitynet.Evaluation.ava.per_image_evaluation
+import models.activitynet.Evaluation.ava.standard_fields as standard_fields
+import models.activitynet.Evaluation.ava.label_map_util as label_map_util
+import models.activitynet.Evaluation.ava.metrics as metrics
+import models.activitynet.Evaluation.ava.per_image_evaluation as per_image_evaluation
 
 
 class DetectionEvaluator(object):
@@ -584,9 +584,9 @@ class ObjectDetectionEvaluation(object):
                              len(detected_scores), len(detected_class_labels))
 
         if image_key in self.detection_keys:
-            logging.warn(
-                'image %s has already been added to the detection result database',
-                image_key)
+            # logging.warn(
+            #     'image %s has already been added to the detection result database',
+            #     image_key)
             return
 
         self.detection_keys.add(image_key)

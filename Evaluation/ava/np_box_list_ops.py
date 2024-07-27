@@ -21,8 +21,8 @@ Example box operations that are supported:
 """
 import numpy as np
 
-import models.activitynet.Evaluation.ava.np_box_list
-import models.activitynet.Evaluation.ava.np_box_ops
+import models.activitynet.Evaluation.ava.np_box_list as np_box_list
+import models.activitynet.Evaluation.ava.np_box_ops as np_box_ops
 
 
 class SortOrder(object):

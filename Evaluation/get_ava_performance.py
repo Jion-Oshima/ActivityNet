@@ -115,9 +115,9 @@ def read_labelmap(labelmap_file):
     name = ""
     class_id = ""
     for line in labelmap_file:
-        if line.startswith("    name:"):
+        if line.startswith("  name:"):
             name = line.split('"')[1]
-        elif line.startswith("    id:") or line.startswith("    label_id:"):
+        elif line.startswith("  id:") or line.startswith("  label_id:"):
             class_id = int(line.strip().split(" ")[-1])
             labelmap.append({"id": class_id, "name": name})
             class_ids.add(class_id)
@@ -192,7 +192,7 @@ def parse_arguments():
         "--labelmap",
         help="Filename of label map",
         type=argparse.FileType("r"),
-        default="/mnt/HDD12TB-1/2024_03_oshima/models/activitynet/Evaluation/ava/ava_action_list_v2.1_for_activitynet_2018.pbtxt.txt")
+        default="/mnt/HDD12TB-1/oshima/2024_03_oshima/models/activitynet/Evaluation/ava/ava_action_list_v2.1_for_activitynet_2018.pbtxt.txt")
     parser.add_argument(
         "-g",
         "--groundtruth",

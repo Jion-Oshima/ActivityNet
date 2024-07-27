@@ -22,10 +22,10 @@ on object masks.
 """
 import numpy as np
 
-import models.activitynet.Evaluation.ava.np_box_list
-import models.activitynet.Evaluation.ava.np_box_list_ops
-import models.activitynet.Evaluation.ava.np_box_mask_list
-import models.activitynet.Evaluation.ava.np_box_mask_list_ops
+import models.activitynet.Evaluation.ava.np_box_list as np_box_list
+import models.activitynet.Evaluation.ava.np_box_list_ops as np_box_list_ops
+import models.activitynet.Evaluation.ava.np_box_mask_list as np_box_mask_list
+import models.activitynet.Evaluation.ava.np_box_mask_list_ops as np_box_mask_list_ops
 
 
 class PerImageEvaluation(object):
